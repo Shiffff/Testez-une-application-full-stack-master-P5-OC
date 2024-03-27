@@ -13,7 +13,15 @@ import { SessionService } from 'src/app/services/session.service';
 import { LoginComponent } from './login.component';
 import { of, throwError } from 'rxjs';
 
-const mockSessionInformation = {};
+const mockSessionInformation = {
+  token: 'string',
+  type: 'string',
+  id: 12,
+  username: 'string',
+  firstName: 'string',
+  lastName: 'string',
+  admin: true,
+};
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -79,9 +87,10 @@ describe('LoginComponent', () => {
   });
 
   it('should submit the form successfully', () => {
-    spyOn(component.authService, 'login').and.returnValue(
-      of(mockSessionInformation)
-    );
+    jest
+      .spyOn(component.authService, 'login')
+      .mockReturnValue(of(mockSessionInformation));
+
     component.form.controls['email'].setValue('test@example.com');
     component.form.controls['password'].setValue('password123');
     component.submit();
