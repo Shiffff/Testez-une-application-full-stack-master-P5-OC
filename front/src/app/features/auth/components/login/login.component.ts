@@ -9,23 +9,34 @@ import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
   public hide = true;
   public onError = false;
 
   public form = this.fb.group({
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', [Validators.required, Validators.minLength(3)]],
+    email: [
+      '',
+      [
+        Validators.required,
+        Validators.email
+      ]
+    ],
+    password: [
+      '',
+      [
+        Validators.required,
+        Validators.min(3)
+      ]
+    ]
   });
 
-  constructor(
-    public authService: AuthService,
-    private fb: FormBuilder,
-    private router: Router,
-    private sessionService: SessionService
-  ) {}
+  constructor(private authService: AuthService,
+              private fb: FormBuilder,
+              private router: Router,
+              private sessionService: SessionService) {
+  }
 
   public submit(): void {
     const loginRequest = this.form.value as LoginRequest;
@@ -34,7 +45,7 @@ export class LoginComponent {
         this.sessionService.logIn(response);
         this.router.navigate(['/sessions']);
       },
-      error: (error) => (this.onError = true),
+      error: error => this.onError = true,
     });
   }
 }

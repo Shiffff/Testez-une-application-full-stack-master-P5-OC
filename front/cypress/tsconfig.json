@@ -3,5 +3,7 @@
   "compilerOptions": {
     "isolatedModules": false
   },
-  "include": ["../node_modules/cypress"]
+  "include": [
+    "../node_modules/cypress"
+  ]
 }
