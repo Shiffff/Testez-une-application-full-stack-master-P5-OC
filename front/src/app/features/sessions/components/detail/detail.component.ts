@@ -11,7 +11,7 @@ import { SessionApiService } from '../../services/session-api.service';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.scss']
+  styleUrls: ['./detail.component.scss'],
 })
 export class DetailComponent implements OnInit {
   public session: Session | undefined;
@@ -24,13 +24,14 @@ export class DetailComponent implements OnInit {
   public userId: string;
 
   constructor(
-    private route: ActivatedRoute,
-    private fb: FormBuilder,
-    private sessionService: SessionService,
-    private sessionApiService: SessionApiService,
-    private teacherService: TeacherService,
-    private matSnackBar: MatSnackBar,
-    private router: Router) {
+    public route: ActivatedRoute,
+    public fb: FormBuilder,
+    public sessionService: SessionService,
+    public sessionApiService: SessionApiService,
+    public teacherService: TeacherService,
+    public matSnackBar: MatSnackBar,
+    public router: Router
+  ) {
     this.sessionId = this.route.snapshot.paramMap.get('id')!;
     this.isAdmin = this.sessionService.sessionInformation!.admin;
     this.userId = this.sessionService.sessionInformation!.id.toString();
@@ -45,33 +46,35 @@ export class DetailComponent implements OnInit {
   }
 
   public delete(): void {
-    this.sessionApiService
-      .delete(this.sessionId)
-      .subscribe((_: any) => {
-          this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });
-          this.router.navigate(['sessions']);
-        }
-      );
+    this.sessionApiService.delete(this.sessionId).subscribe((_: any) => {
+      this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });
+      this.router.navigate(['sessions']);
+    });
   }
 
   public participate(): void {
-    this.sessionApiService.participate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());
+    this.sessionApiService
+      .participate(this.sessionId, this.userId)
+      .subscribe((_) => this.fetchSession());
   }
 
   public unParticipate(): void {
-    this.sessionApiService.unParticipate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());
+    this.sessionApiService
+      .unParticipate(this.sessionId, this.userId)
+      .subscribe((_) => this.fetchSession());
   }
 
-  private fetchSession(): void {
+  public fetchSession(): void {
     this.sessionApiService
       .detail(this.sessionId)
       .subscribe((session: Session) => {
         this.session = session;
-        this.isParticipate = session.users.some(u => u === this.sessionService.sessionInformation!.id);
+        this.isParticipate = session.users.some(
+          (u) => u === this.sessionService.sessionInformation!.id
+        );
         this.teacherService
           .detail(session.teacher_id.toString())
-          .subscribe((teacher: Teacher) => this.teacher = teacher);
+          .subscribe((teacher: Teacher) => (this.teacher = teacher));
       });
   }
-
 }
