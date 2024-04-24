@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-describe('Login spec', () => {
+describe('Login spec admin', () => {
   it('Login successfull', () => {
     cy.visit('/login');
 
@@ -32,28 +32,21 @@ describe('Login spec', () => {
     cy.visit('/login');
 
     cy.intercept('POST', '/api/auth/login', {
+      statusCode: 401,
       body: {
-        id: 1,
-        username: 'userName',
-        firstName: 'firstName',
-        lastName: 'lastName',
-        admin: true,
+        error: 'Unauthorized',
+        message: 'Bad credentials',
+        path: '/api/auth/login',
+        status: 401,
       },
     });
 
-    cy.intercept(
-      {
-        method: 'GET',
-        url: '/api/session',
-      },
-      []
-    ).as('session');
-
-    cy.get('input[formControlName=email]').type('');
+    cy.get('input[formControlName=email]').type('yoga@studio.com');
     cy.get('input[formControlName=password]').type(
       `${'test!1234'}{enter}{enter}`
     );
 
-    cy.url().should('include', '/sessions');
+    cy.url().should('include', '/login');
+    cy.contains('An error occurred').should('be.visible');
   });
 });

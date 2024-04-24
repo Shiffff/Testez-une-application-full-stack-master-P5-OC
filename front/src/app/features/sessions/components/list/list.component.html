@@ -4,7 +4,7 @@
       <mat-card-title class="m0">Rentals available</mat-card-title>
       <button *ngIf="user!.admin" mat-raised-button color="primary" routerLink="create">
         <mat-icon>add</mat-icon>
-        <span class="ml1">Create</span>
+        <span id="createBtn" class="ml1">Create</span>
       </button>
     </mat-card-header>
     <div class="items mt2" fxLayout="row wrap" fxLayout.lt-md="column">
@@ -26,12 +26,12 @@
         <mat-card-actions>
           <button mat-raised-button color="primary" [routerLink]="['detail',session.id]">
             <mat-icon>search</mat-icon>
-            <span class="ml1">Detail</span>
+            <span id="detailBtn" class="ml1">Detail</span>
           </button>
           <button *ngIf="user!.admin" mat-raised-button color="primary"
                   [routerLink]="['update',session.id]">
             <mat-icon>edit</mat-icon>
-            <span class="ml1">Edit</span>
+            <span id="editBtn" class="ml1">Edit</span>
           </button>
         </mat-card-actions>
       </mat-card>
