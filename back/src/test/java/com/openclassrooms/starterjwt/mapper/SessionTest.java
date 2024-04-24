@@ -14,8 +14,8 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
@@ -88,4 +88,8 @@ public class SessionTest {
         assertThat(sessionDto.getTeacher_id()).isEqualTo(teacher.getId());
         assertThat(sessionDto.getUsers()).containsExactly(user.getId());
     }
+
+
+
+
 }

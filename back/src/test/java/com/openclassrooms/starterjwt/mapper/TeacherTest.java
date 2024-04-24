@@ -5,51 +5,79 @@ import com.openclassrooms.starterjwt.models.Teacher;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
 import java.time.LocalDateTime;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.ArrayList;
+import java.util.List;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class TeacherTest {
 
     private TeacherMapper teacherMapper = Mappers.getMapper(TeacherMapper.class);
 
     @Test
-    public void testTeacherToTeacherDtoMapping() {
-        // Créer un objet Teacher
-        Teacher teacher = new Teacher();
-        teacher.setId(1L);
-        teacher.setFirstName("John");
-        teacher.setLastName("Doe");
-        teacher.setCreatedAt(LocalDateTime.now());
-        teacher.setUpdatedAt(LocalDateTime.now());
+    public void testToEntityList() {
+        // Créer une liste d'objets TeacherDto
+        List<TeacherDto> teacherDtos = new ArrayList<>();
+        TeacherDto teacherDto1 = new TeacherDto();
+        teacherDto1.setId(1L);
+        teacherDto1.setFirstName("John");
+        teacherDto1.setLastName("Doe");
+        teacherDto1.setCreatedAt(LocalDateTime.now());
+        teacherDto1.setUpdatedAt(LocalDateTime.now());
 
-        // Mapper l'objet Teacher vers TeacherDto
-        TeacherDto teacherDto = teacherMapper.toDto(teacher);
+        TeacherDto teacherDto2 = new TeacherDto();
+        teacherDto2.setId(2L);
+        teacherDto2.setFirstName("Jane");
+        teacherDto2.setLastName("Smith");
+        teacherDto2.setCreatedAt(LocalDateTime.now());
+        teacherDto2.setUpdatedAt(LocalDateTime.now());
 
-        // Vérifier si le mapping est correct
-        assertEquals(teacher.getId(), teacherDto.getId());
-        assertEquals(teacher.getFirstName(), teacherDto.getFirstName());
-        assertEquals(teacher.getLastName(), teacherDto.getLastName());
-        assertEquals(teacher.getCreatedAt(), teacherDto.getCreatedAt());
-        assertEquals(teacher.getUpdatedAt(), teacherDto.getUpdatedAt());
+        teacherDtos.add(teacherDto1);
+        teacherDtos.add(teacherDto2);
+
+        // Mapper la liste d'objets TeacherDto vers une liste d'objets Teacher
+        List<Teacher> teachers = teacherMapper.toEntity(teacherDtos);
+
+        // Vérifier si le mapping est correct pour chaque objet
+        assertThat(teachers).isNotEmpty().hasSize(teacherDtos.size());
+
+        for (int i = 0; i < teacherDtos.size(); i++) {
+            assertThat(teachers.get(i))
+                    .usingRecursiveComparison()
+                    .isEqualTo(teacherDtos.get(i));
+        }
     }
 
     @Test
-    public void testTeacherDtoToTeacherMapping() {
-        // Créer un objet TeacherDto
-        TeacherDto teacherDto = new TeacherDto();
-        teacherDto.setId(1L);
-        teacherDto.setFirstName("John");
-        teacherDto.setLastName("Doe");
-        teacherDto.setCreatedAt(LocalDateTime.now());
-        teacherDto.setUpdatedAt(LocalDateTime.now());
+    public void testToDtoList() {
+        // Créer une liste d'objets Teacher
+        List<Teacher> teachers = new ArrayList<>();
+        Teacher teacher1 = new Teacher();
+        teacher1.setId(1L);
+        teacher1.setFirstName("John");
+        teacher1.setLastName("Doe");
+        teacher1.setCreatedAt(LocalDateTime.now());
+        teacher1.setUpdatedAt(LocalDateTime.now());
 
-        // Mapper l'objet TeacherDto vers Teacher
-        Teacher teacher = teacherMapper.toEntity(teacherDto);
+        Teacher teacher2 = new Teacher();
+        teacher2.setId(2L);
+        teacher2.setFirstName("Jane");
+        teacher2.setLastName("Smith");
+        teacher2.setCreatedAt(LocalDateTime.now());
+        teacher2.setUpdatedAt(LocalDateTime.now());
 
-        // Vérifier si le mapping est correct
-        assertEquals(teacherDto.getId(), teacher.getId());
-        assertEquals(teacherDto.getFirstName(), teacher.getFirstName());
-        assertEquals(teacherDto.getLastName(), teacher.getLastName());
-        assertEquals(teacherDto.getCreatedAt(), teacher.getCreatedAt());
-        assertEquals(teacherDto.getUpdatedAt(), teacher.getUpdatedAt());
+        teachers.add(teacher1);
+        teachers.add(teacher2);
+
+        // Mapper la liste d'objets Teacher vers une liste d'objets TeacherDto
+        List<TeacherDto> teacherDtos = teacherMapper.toDto(teachers);
+
+        // Vérifier si le mapping est correct pour chaque objet
+        assertThat(teacherDtos).isNotEmpty().hasSize(teachers.size());
+
+        for (int i = 0; i < teachers.size(); i++) {
+            assertThat(teacherDtos.get(i))
+                    .usingRecursiveComparison()
+                    .isEqualTo(teachers.get(i));
+        }
     }
 }

@@ -1,6 +1,6 @@
 {
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/polyfills.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/polyfills.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/polyfills.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/polyfills.ts",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -13,17 +13,17 @@
       "names": [],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/polyfills.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/polyfills.ts"
       ],
       "sourcesContent": [
         "/**\n * This file includes polyfills needed by Angular and is loaded before the app.\n * You can add your own extra polyfills to this file.\n *\n * This file is divided into 2 sections:\n *   1. Browser polyfills. These are applied before loading ZoneJS and are sorted by browsers.\n *   2. Application imports. Files imported after ZoneJS that should be loaded before your main\n *      file.\n *\n * The current setup is for so-called \"evergreen\" browsers; the last versions of browsers that\n * automatically update themselves. This includes recent versions of Safari, Chrome (including\n * Opera), Edge on the desktop, and iOS and Chrome on mobile.\n *\n * Learn more in https://angular.io/guide/browser-support\n */\n\n/***************************************************************************************************\n * BROWSER POLYFILLS\n */\n\n/**\n * By default, zone.js will patch all possible macroTask and DomEvents\n * user can disable parts of macroTask/DomEvents patch by setting following flags\n * because those flags need to be set before `zone.js` being loaded, and webpack\n * will put import in the top of bundle, so user need to create a separate file\n * in this directory (for example: zone-flags.ts), and put the following flags\n * into that file, and then add the following code before importing zone.js.\n * import './zone-flags';\n *\n * The flags allowed in zone-flags.ts are listed here.\n *\n * The following flags will work for all browsers.\n *\n * (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame\n * (window as any).__Zone_disable_on_property = true; // disable patch onProperty such as onclick\n * (window as any).__zone_symbol__UNPATCHED_EVENTS = ['scroll', 'mousemove']; // disable patch specified eventNames\n *\n *  in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js\n *  with the following flag, it will bypass `zone.js` patch for IE/Edge\n *\n *  (window as any).__Zone_enable_cross_context_check = true;\n *\n */\n\n/***************************************************************************************************\n * Zone JS is required by default for Angular itself.\n */\nimport 'zone.js';  // Included with Angular CLI.\n\n\n/***************************************************************************************************\n * APPLICATION IMPORTS\n */\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c1e73f6ea9562c653abd2ff2fda5d64063a70fa0"
+    "hash": "95e66a85d47847479272fb8a59e8aac476123b3c"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/session.service.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/session.service.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/session.service.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/session.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -385,35 +385,35 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 146,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 1097,
+      "4": 11,
+      "5": 11,
+      "6": 11,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 12,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 146,
-      "3": 1,
-      "4": 0,
-      "5": 1,
-      "6": 1
+      "0": 15,
+      "1": 15,
+      "2": 1097,
+      "3": 11,
+      "4": 1,
+      "5": 12,
+      "6": 15
     },
     "b": {
       "0": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -438,17 +438,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/session.service.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/session.service.ts"
       ],
       "sourcesContent": [
         "import { Injectable } from '@angular/core';\nimport { BehaviorSubject, Observable } from 'rxjs';\nimport { SessionInformation } from '../interfaces/sessionInformation.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class SessionService {\n\n  public isLogged = false;\n  public sessionInformation: SessionInformation | undefined;\n\n  private isLoggedSubject = new BehaviorSubject<boolean>(this.isLogged);\n\n  public $isLogged(): Observable<boolean> {\n    return this.isLoggedSubject.asObservable();\n  }\n\n  public logIn(user: SessionInformation): void {\n    this.sessionInformation = user;\n    this.isLogged = true;\n    this.next();\n  }\n\n  public logOut(): void {\n    this.sessionInformation = undefined;\n    this.isLogged = false;\n    this.next();\n  }\n\n  private next(): void {\n    this.isLoggedSubject.next(this.isLogged);\n  }\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c4b31dc0dc9bfe85963d2bd56d96f620c7c0a9a1"
+    "hash": "f09dfd019061d2a09f59678e6a1feb2b7448de4b"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/user.service.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/user.service.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/user.service.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/user.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -702,27 +702,27 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 0,
-      "2": 0,
-      "3": 0,
+      "0": 15,
+      "1": 3,
+      "2": 3,
+      "3": 3,
       "4": 0,
-      "5": 1,
-      "6": 0,
-      "7": 1,
-      "8": 1
+      "5": 15,
+      "6": 3,
+      "7": 15,
+      "8": 15
     },
     "f": {
-      "0": 1,
-      "1": 0,
-      "2": 0,
+      "0": 15,
+      "1": 3,
+      "2": 3,
       "3": 0,
-      "4": 0
+      "4": 3
     },
     "b": {
       "0": [
-        0,
-        0
+        3,
+        3
       ]
     },
     "inputSourceMap": {
@@ -743,17 +743,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/user.service.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/user.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { User } from '../interfaces/user.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class UserService {\n\n  private pathService = 'api/user';\n\n  constructor(private httpClient: HttpClient) { }\n\n  public getById(id: string): Observable<User> {\n    return this.httpClient.get<User>(`${this.pathService}/${id}`);\n  }\n\n  public delete(id: string): Observable<any> {\n    return this.httpClient.delete(`${this.pathService}/${id}`);\n  }\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "5fc0ba2b9e5ff06420d446346c13b5cc4e4c2f83"
+    "hash": "fb9f5f50e0e4ae349014238098c2d3f66d4134a2"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/me/me.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/me/me.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/me/me.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/me/me.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -2229,10 +2229,10 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
+      "0": 9,
+      "1": 3,
+      "2": 3,
+      "3": 3,
       "4": 0,
       "5": 0,
       "6": 0,
@@ -2249,119 +2249,119 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 0,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 0,
-      "56": 1,
-      "57": 0,
-      "58": 0,
-      "59": 0,
-      "60": 0,
-      "61": 0,
-      "62": 0,
+      "20": 9,
+      "21": 3,
+      "22": 3,
+      "23": 3,
+      "24": 3,
+      "25": 3,
+      "26": 3,
+      "27": 3,
+      "28": 3,
+      "29": 3,
+      "30": 3,
+      "31": 3,
+      "32": 3,
+      "33": 3,
+      "34": 3,
+      "35": 3,
+      "36": 3,
+      "37": 3,
+      "38": 3,
+      "39": 3,
+      "40": 3,
+      "41": 3,
+      "42": 9,
+      "43": 6,
+      "44": 6,
+      "45": 6,
+      "46": 6,
+      "47": 6,
+      "48": 6,
+      "49": 6,
+      "50": 6,
+      "51": 6,
+      "52": 6,
+      "53": 6,
+      "54": 6,
+      "55": 6,
+      "56": 15,
+      "57": 3,
+      "58": 3,
+      "59": 3,
+      "60": 3,
+      "61": 3,
+      "62": 3,
       "63": 0,
       "64": 0,
       "65": 0,
       "66": 0,
       "67": 0,
-      "68": 1,
-      "69": 0,
-      "70": 1,
-      "71": 0,
-      "72": 0,
-      "73": 0,
+      "68": 15,
+      "69": 3,
+      "70": 15,
+      "71": 24,
+      "72": 3,
+      "73": 3,
       "74": 0,
-      "75": 0,
-      "76": 0,
-      "77": 0,
-      "78": 0,
-      "79": 0,
-      "80": 0,
-      "81": 0,
-      "82": 0,
-      "83": 0,
-      "84": 0,
-      "85": 0,
-      "86": 0,
-      "87": 1
+      "75": 3,
+      "76": 3,
+      "77": 3,
+      "78": 3,
+      "79": 3,
+      "80": 3,
+      "81": 3,
+      "82": 3,
+      "83": 3,
+      "84": 24,
+      "85": 21,
+      "86": 21,
+      "87": 15
     },
     "f": {
-      "0": 0,
+      "0": 9,
       "1": 0,
       "2": 0,
-      "3": 0,
-      "4": 1,
-      "5": 0,
-      "6": 0,
-      "7": 0,
+      "3": 9,
+      "4": 15,
+      "5": 3,
+      "6": 3,
+      "7": 3,
       "8": 0,
       "9": 0,
       "10": 0,
-      "11": 0,
-      "12": 0,
+      "11": 3,
+      "12": 24,
       "13": 0
     },
     "b": {
       "0": [
-        0,
-        0
+        3,
+        6
       ],
       "1": [
         0,
         0
       ],
       "2": [
-        0,
-        0
+        3,
+        6
       ],
       "3": [
-        0,
-        0
+        6,
+        3
       ],
       "4": [
-        0,
-        0
+        3,
+        3
       ],
       "5": [
-        0,
-        0
+        3,
+        21
       ],
       "6": [
-        0,
-        0
+        21,
+        3
       ]
     },
     "inputSourceMap": {
@@ -2400,8 +2400,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/me/me.component.html",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/me/me.component.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/me/me.component.html",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/me/me.component.ts"
       ],
       "sourcesContent": [
         "<div class=\"m3\">\n  <mat-card>\n    <mat-card-title>\n      <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n        <button mat-icon-button (click)=\"back()\">\n          <mat-icon>arrow_back</mat-icon>\n        </button>\n        <h1>User information</h1>\n      </div>\n    </mat-card-title>\n    <mat-card-content>\n      <div *ngIf=\"user\" fxLayout=\"column\" fxLayoutAlign=\"start center\">\n        <p>Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>\n        <p>Email: {{ user.email }}</p>\n        <p *ngIf=\"user.admin\" class=\"my2\">You are admin</p>\n        <div *ngIf=\"!user.admin\" fxLayout=\"column\" class=\"my2\" fxLayoutAlign=\"center center\">\n          <p>Delete my account:</p>\n          <button mat-raised-button color=\"warn\" (click)=\"delete()\">\n            <mat-icon>delete</mat-icon>\n            <span class=\"ml1\">Detail</span>\n          </button>\n        </div>\n        <div fxLayoutAlign=\"space-between center\" class=\"p2 w100\">\n\n          <p><i>Create at: </i> {{ user.createdAt | date: 'longDate'}}</p>\n          <p><i>Last update: </i> {{ user.updatedAt| date: 'longDate'}}</p>\n        </div>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</div>\n",
@@ -2409,10 +2409,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "ee25320f10418d5b53fcb94c35f1ad832e9b488e"
+    "hash": "395969968a6849a1a5ecc14ac104063b87d38273"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/not-found/not-found.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/not-found/not-found.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/not-found/not-found.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/not-found/not-found.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -2654,18 +2654,18 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 1,
+      "3": 15,
       "4": 0,
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 1
+      "8": 15
     },
     "f": {
-      "0": 1,
+      "0": 15,
       "1": 0,
       "2": 0
     },
@@ -2693,8 +2693,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/not-found/not-found.component.ts",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/components/not-found/not-found.component.html"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/not-found/not-found.component.ts",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/components/not-found/not-found.component.html"
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-not-found',\n  templateUrl: './not-found.component.html',\n  styleUrls: ['./not-found.component.scss']\n})\nexport class NotFoundComponent {\n}\n",
@@ -2702,10 +2702,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b37333b630faf8c753c2a512ec1969ae3bceacb2"
+    "hash": "59bc706d4b2eb179cc1170da1c72566fcd3a5898"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/guards/auth.guard.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/guards/auth.guard.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/guards/auth.guard.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/guards/auth.guard.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -2991,32 +2991,32 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
+      "0": 15,
+      "1": 11,
+      "2": 11,
+      "3": 17,
       "4": 0,
       "5": 0,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1
+      "6": 17,
+      "7": 15,
+      "8": 11,
+      "9": 15,
+      "10": 15
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1
+      "0": 15,
+      "1": 11,
+      "2": 17,
+      "3": 11
     },
     "b": {
       "0": [
         0,
-        1
+        17
       ],
       "1": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -3037,17 +3037,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/guards/auth.guard.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/guards/auth.guard.ts"
       ],
       "sourcesContent": [
         "import {Injectable} from \"@angular/core\";\nimport {CanActivate, Router} from \"@angular/router\"; \nimport { SessionService } from \"../services/session.service\";\n\n@Injectable({providedIn: 'root'})\nexport class AuthGuard implements CanActivate {\n\n  constructor( \n    private router: Router,\n    private sessionService: SessionService,\n  ) {\n  }\n\n  public canActivate(): boolean {\n    if (!this.sessionService.isLogged) {\n      this.router.navigate(['login']);\n      return false;\n    }\n    return true;\n  }\n}"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "8090e696e97b743160cd01e459cd5b6ef5300846"
+    "hash": "6786d71b5f34063c5e0c4ff20800541ed937f632"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/guards/unauth.guard.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/guards/unauth.guard.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/guards/unauth.guard.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/guards/unauth.guard.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3333,32 +3333,32 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 16,
       "4": 0,
       "5": 0,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1
+      "6": 16,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 15
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1
+      "0": 15,
+      "1": 15,
+      "2": 16,
+      "3": 15
     },
     "b": {
       "0": [
         0,
-        1
+        16
       ],
       "1": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -3379,17 +3379,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/guards/unauth.guard.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/guards/unauth.guard.ts"
       ],
       "sourcesContent": [
         "import {Injectable} from \"@angular/core\";\nimport {CanActivate, Router} from \"@angular/router\"; \nimport { SessionService } from \"../services/session.service\";\n\n@Injectable({providedIn: 'root'})\nexport class UnauthGuard implements CanActivate {\n\n  constructor( \n    private router: Router,\n    private sessionService: SessionService,\n  ) {\n  }\n\n  public canActivate(): boolean {\n    if (this.sessionService.isLogged) {\n      this.router.navigate(['rentals']);\n      return false;\n    }\n    return true;\n  }\n}"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "80ce6f86c2187541537e9efc8fd0ec6a6d072675"
+    "hash": "6c0b119742c5bc386bf3d62d4507913cbb05d91c"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app-routing.module.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app-routing.module.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app-routing.module.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app-routing.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3687,30 +3687,30 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 11,
+      "4": 11,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 15
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1
+      "0": 15,
+      "1": 15,
+      "2": 11,
+      "3": 11,
+      "4": 15,
+      "5": 15
     },
     "b": {
       "0": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -3737,17 +3737,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app-routing.module.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app-routing.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { MeComponent } from './components/me/me.component';\nimport { NotFoundComponent } from './components/not-found/not-found.component';\nimport { AuthGuard } from './guards/auth.guard';\nimport { UnauthGuard } from './guards/unauth.guard';\n\nconst routes: Routes = [\n  {\n    path: '',\n    canActivate: [UnauthGuard],\n    loadChildren: () =>\n      import('./features/auth/auth.module').then((m) => m.AuthModule),\n  },\n  {\n    path: 'sessions',\n    canActivate: [AuthGuard],\n    loadChildren: () =>\n      import('./features/sessions/sessions.module').then(\n        (m) => m.SessionsModule\n      ),\n  },\n  {\n    path: 'me',\n    canActivate: [AuthGuard],\n    component: MeComponent,\n  },\n  { path: '404', component: NotFoundComponent },\n  { path: '**', redirectTo: '404' },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule],\n})\nexport class AppRoutingModule {}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "1b647b9a0161296439072bf36e76f5177b90ef1f"
+    "hash": "fa6aea442f3f34defb59c3c6ce7a805749060afa"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/services/auth.service.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/services/auth.service.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/services/auth.service.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/services/auth.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -4001,27 +4001,27 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 0,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 4,
+      "4": 12,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 0,
-      "3": 1,
-      "4": 1
+      "0": 15,
+      "1": 15,
+      "2": 4,
+      "3": 12,
+      "4": 15
     },
     "b": {
       "0": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -4043,17 +4043,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/services/auth.service.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/services/auth.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { LoginRequest } from '../interfaces/loginRequest.interface';\nimport { RegisterRequest } from '../interfaces/registerRequest.interface';\nimport { SessionInformation } from 'src/app/interfaces/sessionInformation.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class AuthService {\n\n  private pathService = 'api/auth';\n\n  constructor(private httpClient: HttpClient) { }\n\n  public register(registerRequest: RegisterRequest): Observable<void> {\n    return this.httpClient.post<void>(`${this.pathService}/register`, registerRequest);\n  }\n\n  public login(loginRequest: LoginRequest): Observable<SessionInformation> {\n    return this.httpClient.post<SessionInformation>(`${this.pathService}/login`, loginRequest);\n  }\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b09500310ec756cd12b2e50a6e96863c4fde7e65"
+    "hash": "4347447e05408f0013ae88c9eb18d3a65c6ae3b7"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -4937,86 +4937,86 @@
       }
     },
     "s": {
-      "0": 103,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 1,
-      "14": 1,
-      "15": 45,
-      "16": 1,
-      "17": 1,
-      "18": 1,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 146,
-      "27": 0,
-      "28": 0,
-      "29": 1,
-      "30": 1,
-      "31": 1,
-      "32": 147,
-      "33": 1,
-      "34": 1,
-      "35": 1,
-      "36": 1,
-      "37": 1,
-      "38": 1,
-      "39": 1,
-      "40": 1,
-      "41": 1,
-      "42": 1,
-      "43": 147,
-      "44": 146,
-      "45": 146,
-      "46": 146,
-      "47": 1
+      "0": 375,
+      "1": 11,
+      "2": 11,
+      "3": 11,
+      "4": 11,
+      "5": 11,
+      "6": 11,
+      "7": 11,
+      "8": 11,
+      "9": 11,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 11,
+      "14": 11,
+      "15": 749,
+      "16": 16,
+      "17": 16,
+      "18": 16,
+      "19": 16,
+      "20": 16,
+      "21": 16,
+      "22": 15,
+      "23": 15,
+      "24": 15,
+      "25": 15,
+      "26": 1097,
+      "27": 1,
+      "28": 1,
+      "29": 15,
+      "30": 15,
+      "31": 15,
+      "32": 1112,
+      "33": 15,
+      "34": 15,
+      "35": 15,
+      "36": 15,
+      "37": 15,
+      "38": 15,
+      "39": 15,
+      "40": 15,
+      "41": 15,
+      "42": 15,
+      "43": 1112,
+      "44": 1097,
+      "45": 1097,
+      "46": 1097,
+      "47": 15
     },
     "f": {
-      "0": 103,
-      "1": 0,
-      "2": 45,
-      "3": 1,
-      "4": 1,
-      "5": 146,
-      "6": 0,
-      "7": 1,
-      "8": 147
+      "0": 375,
+      "1": 1,
+      "2": 749,
+      "3": 15,
+      "4": 15,
+      "5": 1097,
+      "6": 1,
+      "7": 15,
+      "8": 1112
     },
     "b": {
       "0": [
-        1,
-        102
+        11,
+        364
       ],
       "1": [
-        1,
-        44
+        16,
+        733
       ],
       "2": [
-        1,
-        1
+        15,
+        15
       ],
       "3": [
-        1,
-        146
+        15,
+        1097
       ],
       "4": [
-        146,
-        1
+        1097,
+        15
       ]
     },
     "inputSourceMap": {
@@ -5042,8 +5042,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app.component.html",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app.component.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app.component.html",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app.component.ts"
       ],
       "sourcesContent": [
         "<div class=\"app\">\n  <mat-toolbar color=\"primary\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n    <span>Yoga app</span>\n    <div *ngIf=\"$isLogged() | async; else notLogged\">\n      <span id=\"sessionsBtn\" routerLink=\"sessions\" class=\"link\">Sessions</span>\n      <span id=\"accountBtn\" routerLink=\"me\" class=\"link\">Account</span>\n      <span id=\"logoutBtn\" (click)=\"logout()\" class=\"link\">Logout</span>\n    </div>\n    <ng-template #notLogged>\n      <div>\n        <span routerLink=\"login\" class=\"link\">Login</span>\n        <span routerLink=\"register\" class=\"link\">Register</span>\n      </div>\n    </ng-template>\n  </mat-toolbar>\n  <div>\n    <router-outlet></router-outlet>\n  </div>\n</div>",
@@ -5051,10 +5051,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "99e7bea56eeea32df39fc365176919fb4a4e1a2b"
+    "hash": "2e6f518cb1ff42e032400df9333a7e074402ea21"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/interceptors/jwt.interceptor.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/interceptors/jwt.interceptor.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/interceptors/jwt.interceptor.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/interceptors/jwt.interceptor.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5320,30 +5320,30 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 5,
-      "3": 4,
-      "4": 5,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1
+      "0": 15,
+      "1": 15,
+      "2": 50,
+      "3": 34,
+      "4": 50,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 5,
-      "3": 1
+      "0": 15,
+      "1": 15,
+      "2": 50,
+      "3": 15
     },
     "b": {
       "0": [
-        4,
-        1
+        34,
+        16
       ],
       "1": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -5371,17 +5371,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/interceptors/jwt.interceptor.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/interceptors/jwt.interceptor.ts"
       ],
       "sourcesContent": [
         "import { HttpHandler, HttpInterceptor, HttpRequest } from \"@angular/common/http\";\nimport { Injectable } from \"@angular/core\";\nimport { SessionService } from '../services/session.service';\n\n@Injectable({ providedIn: 'root' })\nexport class JwtInterceptor implements HttpInterceptor {\n  constructor(private sessionService: SessionService) {}\n\n  public intercept(request: HttpRequest<any>, next: HttpHandler) {\n    if (this.sessionService.isLogged) {\n      request = request.clone({\n        setHeaders: {\n          Authorization: `Bearer ${this.sessionService.sessionInformation!.token}`,\n        },\n      });\n    }\n    return next.handle(request);\n  }\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "8b4e1965613c1573d090c158ea228265f36e43b8"
+    "hash": "001b02bb6494d853b0bb1a61591201ee879ed775"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app.module.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app.module.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app.module.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5543,22 +5543,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 15,
+      "1": 15
     },
     "b": {
       "0": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -5588,17 +5588,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/app.module.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/app.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { MatSnackBarModule } from '@angular/material/snack-bar';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { NotFoundComponent } from './components/not-found/not-found.component';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';\nimport { JwtInterceptor } from './interceptors/jwt.interceptor';\nimport { MatCardModule } from '@angular/material/card';\nimport { FlexLayoutModule } from '@angular/flex-layout';\nimport { MeComponent } from './components/me/me.component';\n\nconst materialModule = [\n  MatButtonModule,\n  MatCardModule,\n  MatIconModule,\n  MatSnackBarModule,\n  MatToolbarModule,\n]\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    NotFoundComponent,\n    MeComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    BrowserAnimationsModule, \n    FlexLayoutModule,\n    HttpClientModule,\n    ...materialModule\n  ],\n  providers: [\n    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },\n  ],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "fc4351a8451f1a370dcc0de2dce9bb51f7251cea"
+    "hash": "d82340aed8a86db288329fb7eaac1c20d5041bd7"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/environments/environment.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/environments/environment.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/environments/environment.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/environments/environment.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5614,7 +5614,7 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 1
+      "0": 15
     },
     "f": {},
     "b": {},
@@ -5628,17 +5628,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/environments/environment.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/environments/environment.ts"
       ],
       "sourcesContent": [
         "export const environment = {\n  baseUrl: 'localhost:8080/api/',\n  production: false\n};\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "24a68021136ba495a8481bda10592c9f08185d80"
+    "hash": "95d52261a2a7386ec2bb257bbaf7f478d5825e0b"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/main.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/main.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/main.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/main.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5746,9 +5746,9 @@
       }
     },
     "s": {
-      "0": 1,
+      "0": 15,
       "1": 0,
-      "2": 1,
+      "2": 15,
       "3": 0
     },
     "f": {
@@ -5757,7 +5757,7 @@
     "b": {
       "0": [
         0,
-        1
+        15
       ]
     },
     "inputSourceMap": {
@@ -5777,17 +5777,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/main.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/main.ts"
       ],
       "sourcesContent": [
         "import { enableProdMode } from '@angular/core';\nimport { platformBrowserDynamic } from '@angular/platform-browser-dynamic';\n\nimport { AppModule } from './app/app.module';\nimport { environment } from './environments/environment';\n\nif (environment.production) {\n  enableProdMode();\n}\n\nplatformBrowserDynamic()\n  .bootstrapModule(AppModule)\n  .catch((err) => console.error(err));\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "448dca32e976e094d182445d30bb50b959ca657a"
+    "hash": "80f3e090a208cc671221044f514a50206154b2a1"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/login/login.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/login/login.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/login/login.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/login/login.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6821,100 +6821,100 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 0,
-      "17": 1,
-      "18": 1,
-      "19": 1,
-      "20": 43,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 1,
-      "31": 1,
-      "32": 1,
-      "33": 1,
-      "34": 2,
-      "35": 1,
-      "36": 1,
-      "37": 1,
-      "38": 1,
-      "39": 1,
-      "40": 1,
-      "41": 1,
-      "42": 1,
-      "43": 43,
-      "44": 42,
-      "45": 42,
-      "46": 42,
-      "47": 42,
-      "48": 42,
-      "49": 42,
-      "50": 42,
-      "51": 42,
-      "52": 42,
-      "53": 42,
-      "54": 42,
-      "55": 42,
-      "56": 1
-    },
-    "f": {
-      "0": 0,
+      "0": 3,
       "1": 1,
       "2": 1,
       "3": 1,
-      "4": 1,
-      "5": 0,
-      "6": 1,
-      "7": 43,
-      "8": 1,
-      "9": 2
+      "4": 15,
+      "5": 14,
+      "6": 14,
+      "7": 14,
+      "8": 14,
+      "9": 14,
+      "10": 14,
+      "11": 14,
+      "12": 12,
+      "13": 12,
+      "14": 11,
+      "15": 11,
+      "16": 1,
+      "17": 15,
+      "18": 14,
+      "19": 15,
+      "20": 522,
+      "21": 14,
+      "22": 14,
+      "23": 14,
+      "24": 14,
+      "25": 14,
+      "26": 12,
+      "27": 14,
+      "28": 14,
+      "29": 14,
+      "30": 14,
+      "31": 14,
+      "32": 14,
+      "33": 14,
+      "34": 24,
+      "35": 14,
+      "36": 14,
+      "37": 14,
+      "38": 14,
+      "39": 14,
+      "40": 14,
+      "41": 14,
+      "42": 14,
+      "43": 522,
+      "44": 508,
+      "45": 508,
+      "46": 508,
+      "47": 508,
+      "48": 508,
+      "49": 508,
+      "50": 508,
+      "51": 508,
+      "52": 508,
+      "53": 508,
+      "54": 508,
+      "55": 508,
+      "56": 15
+    },
+    "f": {
+      "0": 3,
+      "1": 15,
+      "2": 14,
+      "3": 12,
+      "4": 11,
+      "5": 1,
+      "6": 14,
+      "7": 522,
+      "8": 12,
+      "9": 24
     },
     "b": {
       "0": [
-        0,
-        0
+        1,
+        2
       ],
       "1": [
-        1,
-        1
+        14,
+        14
       ],
       "2": [
-        1,
-        42
+        14,
+        508
       ],
       "3": [
-        42,
-        1
+        508,
+        14
       ],
       "4": [
-        40,
-        2
+        484,
+        24
       ],
       "5": [
-        40,
-        2
+        484,
+        24
       ]
     },
     "inputSourceMap": {
@@ -6955,8 +6955,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/login/login.component.ts",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/login/login.component.html"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/login/login.component.ts",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/login/login.component.html"
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\nimport { FormBuilder, Validators } from '@angular/forms';\nimport { Router } from '@angular/router';\nimport { SessionInformation } from 'src/app/interfaces/sessionInformation.interface';\nimport { SessionService } from 'src/app/services/session.service';\nimport { LoginRequest } from '../../interfaces/loginRequest.interface';\nimport { AuthService } from '../../services/auth.service';\n\n@Component({\n  selector: 'app-login',\n  templateUrl: './login.component.html',\n  styleUrls: ['./login.component.scss']\n})\nexport class LoginComponent {\n  public hide = true;\n  public onError = false;\n\n  public form = this.fb.group({\n    email: [\n      '',\n      [\n        Validators.required,\n        Validators.email\n      ]\n    ],\n    password: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3)\n      ]\n    ]\n  });\n\n  constructor(private authService: AuthService,\n              private fb: FormBuilder,\n              private router: Router,\n              private sessionService: SessionService) {\n  }\n\n  public submit(): void {\n    const loginRequest = this.form.value as LoginRequest;\n    this.authService.login(loginRequest).subscribe({\n      next: (response: SessionInformation) => {\n        this.sessionService.logIn(response);\n        this.router.navigate(['/sessions']);\n      },\n      error: error => this.onError = true,\n    });\n  }\n}\n",
@@ -6964,10 +6964,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "8bf817c802d013b3b66c50e719df257541f7787a"
+    "hash": "6fae9f052a3e3bca9680454c88ca4118c13a6ae0"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/register/register.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/register/register.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/register/register.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/register/register.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -7825,83 +7825,83 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 1,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 1,
-      "15": 0,
-      "16": 1,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 1
+      "0": 10,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 15,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 4,
+      "11": 4,
+      "12": 2,
+      "13": 2,
+      "14": 15,
+      "15": 3,
+      "16": 15,
+      "17": 189,
+      "18": 3,
+      "19": 3,
+      "20": 3,
+      "21": 3,
+      "22": 3,
+      "23": 4,
+      "24": 3,
+      "25": 3,
+      "26": 3,
+      "27": 3,
+      "28": 3,
+      "29": 3,
+      "30": 3,
+      "31": 3,
+      "32": 3,
+      "33": 3,
+      "34": 3,
+      "35": 3,
+      "36": 3,
+      "37": 3,
+      "38": 3,
+      "39": 3,
+      "40": 3,
+      "41": 189,
+      "42": 186,
+      "43": 186,
+      "44": 186,
+      "45": 186,
+      "46": 186,
+      "47": 186,
+      "48": 15
     },
     "f": {
-      "0": 0,
-      "1": 1,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0
+      "0": 10,
+      "1": 15,
+      "2": 3,
+      "3": 4,
+      "4": 2,
+      "5": 2,
+      "6": 3,
+      "7": 189,
+      "8": 4
     },
     "b": {
       "0": [
-        0,
-        0
+        1,
+        9
       ],
       "1": [
-        0,
-        0
+        3,
+        3
       ],
       "2": [
-        0,
-        0
+        3,
+        186
       ],
       "3": [
-        0,
-        0
+        186,
+        3
       ]
     },
     "inputSourceMap": {
@@ -7943,8 +7943,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/register/register.component.ts",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/components/register/register.component.html"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/register/register.component.ts",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/components/register/register.component.html"
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\nimport { FormBuilder, Validators } from '@angular/forms';\nimport { Router } from '@angular/router';\nimport { AuthService } from '../../services/auth.service';\nimport { RegisterRequest } from '../../interfaces/registerRequest.interface';\n\n@Component({\n  selector: 'app-register',\n  templateUrl: './register.component.html',\n  styleUrls: ['./register.component.scss']\n})\nexport class RegisterComponent {\n\n  public onError = false;\n\n  public form = this.fb.group({\n    email: [\n      '',\n      [\n        Validators.required,\n        Validators.email\n      ]\n    ],\n    firstName: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3),\n        Validators.max(20)\n      ]\n    ],\n    lastName: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3),\n        Validators.max(20)\n      ]\n    ],\n    password: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3),\n        Validators.max(40)\n      ]\n    ]\n  });\n\n  constructor(private authService: AuthService,\n              private fb: FormBuilder,\n              private router: Router) {\n  }\n\n  public submit(): void {\n    const registerRequest = this.form.value as RegisterRequest;\n    this.authService.register(registerRequest).subscribe({\n        next: (_: void) => this.router.navigate(['/login']),\n        error: _ => this.onError = true,\n      }\n    );\n  }\n\n}\n",
@@ -7952,10 +7952,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "de62c1ecb19cda3c62433251bf9d4ff2c441ab27"
+    "hash": "dfbaf4c26e5aa7c99921eed4f83e85de54a841cb"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/auth-routing.module.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/auth-routing.module.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/auth-routing.module.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/auth-routing.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -8117,22 +8117,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 15,
+      "1": 15
     },
     "b": {
       "0": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -8151,17 +8151,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/auth-routing.module.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/auth-routing.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { LoginComponent } from './components/login/login.component';\nimport { RegisterComponent } from './components/register/register.component';\n\n\nconst routes: Routes = [\n  { title: 'Login', path: 'login', component: LoginComponent },\n  { title: 'Register', path: 'register', component: RegisterComponent }\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class AuthRoutingModule { }\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "a2d2dd60f07680cc637d21a17014d173f7a9956d"
+    "hash": "989b522d7232f64746cc9f8aa5404953d945204d"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/auth.module.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/auth.module.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/auth.module.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/auth.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -8323,22 +8323,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 15,
+      "1": 15
     },
     "b": {
       "0": [
-        1,
-        1
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -8360,17 +8360,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/auth/auth.module.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/auth/auth.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { AuthRoutingModule } from './auth-routing.module';\nimport { RegisterComponent } from './components/register/register.component';\nimport { LoginComponent } from './components/login/login.component';\nimport { MatCardModule } from '@angular/material/card';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatInputModule } from '@angular/material/input';\nimport { FlexLayoutModule } from '@angular/flex-layout';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { MatIconModule } from '@angular/material/icon';\n\nconst materialModules = [\n  MatButtonModule,\n  MatCardModule,\n  MatFormFieldModule,\n  MatIconModule,\n  MatInputModule\n]\n\n@NgModule({\n  declarations: [\n    RegisterComponent,\n    LoginComponent\n  ],\n  imports: [\n    AuthRoutingModule,\n    CommonModule,\n    FlexLayoutModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ...materialModules\n  ]\n})\nexport class AuthModule { }\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "401d55175b7bd4b17cef15a76e9c3ac12fabb7e6"
+    "hash": "17461ab48323a9d6cf2c5e22d38f79de1b0c4a31"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/services/session-api.service.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/services/session-api.service.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/services/session-api.service.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/services/session-api.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -8794,37 +8794,37 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 2,
-      "4": 0,
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 21,
+      "4": 3,
       "5": 0,
-      "6": 1,
+      "6": 2,
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1
+      "10": 11,
+      "11": 11,
+      "12": 11,
+      "13": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 2,
-      "3": 0,
+      "0": 11,
+      "1": 11,
+      "2": 21,
+      "3": 3,
       "4": 0,
-      "5": 1,
+      "5": 2,
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 1
+      "9": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -8854,17 +8854,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/services/session-api.service.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/services/session-api.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { Session } from '../interfaces/session.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class SessionApiService {\n\n  private pathService = 'api/session';\n\n  constructor(private httpClient: HttpClient) {\n  }\n\n  public all(): Observable<Session[]> {\n    return this.httpClient.get<Session[]>(this.pathService);\n  }\n\n  public detail(id: string): Observable<Session> {\n    return this.httpClient.get<Session>(`${this.pathService}/${id}`);\n  }\n\n  public delete(id: string): Observable<any> {\n    return this.httpClient.delete(`${this.pathService}/${id}`);\n  }\n\n  public create(session: Session): Observable<Session> {\n    return this.httpClient.post<Session>(this.pathService, session);\n  }\n\n  public update(id: string, session: Session): Observable<Session> {\n    return this.httpClient.put<Session>(`${this.pathService}/${id}`, session);\n  }\n\n  public participate(id: string, userId: string): Observable<void> {\n    return this.httpClient.post<void>(`${this.pathService}/${id}/participate/${userId}`, null);\n  }\n\n  public unParticipate(id: string, userId: string): Observable<void> {\n    return this.httpClient.delete<void>(`${this.pathService}/${id}/participate/${userId}`);\n  }\n\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "06cf60ab59776a71dde7f1715bbc1dd0990f2fc2"
+    "hash": "2320da5c6f9317375979ab3f82073bdbb31e00c1"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/teacher.service.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/teacher.service.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/teacher.service.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/teacher.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -9118,27 +9118,27 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 0,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1
+      "0": 11,
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 1,
+      "5": 11,
+      "6": 6,
+      "7": 11,
+      "8": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 0,
-      "4": 1
+      "0": 11,
+      "1": 6,
+      "2": 6,
+      "3": 1,
+      "4": 6
     },
     "b": {
       "0": [
-        1,
-        1
+        6,
+        6
       ]
     },
     "inputSourceMap": {
@@ -9159,17 +9159,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/services/teacher.service.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/services/teacher.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { Teacher } from '../interfaces/teacher.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class TeacherService {\n\n  private pathService = 'api/teacher';\n\n  constructor(private httpClient: HttpClient) { }\n\n  public all(): Observable<Teacher[]> {\n    return this.httpClient.get<Teacher[]>(this.pathService);\n  }\n\n  public detail(id: string): Observable<Teacher> {\n    return this.httpClient.get<Teacher>(`${this.pathService}/${id}`);\n  }\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "1b25e7096f26fe5ce2b676a16d6f55f862a10ead"
+    "hash": "a751dee385132415d882b14e19c93d46e63349e5"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/detail/detail.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/detail/detail.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/detail/detail.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/detail/detail.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -11973,19 +11973,19 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
+      "0": 7,
+      "1": 1,
+      "2": 1,
+      "3": 1,
       "4": 0,
       "5": 0,
       "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
       "13": 0,
       "14": 0,
       "15": 0,
@@ -12023,105 +12023,105 @@
       "47": 0,
       "48": 0,
       "49": 0,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 0,
-      "56": 0,
-      "57": 0,
-      "58": 0,
-      "59": 0,
-      "60": 0,
-      "61": 0,
-      "62": 0,
-      "63": 0,
-      "64": 0,
-      "65": 0,
+      "50": 2,
+      "51": 1,
+      "52": 1,
+      "53": 1,
+      "54": 1,
+      "55": 1,
+      "56": 1,
+      "57": 1,
+      "58": 2,
+      "59": 1,
+      "60": 1,
+      "61": 1,
+      "62": 7,
+      "63": 1,
+      "64": 1,
+      "65": 1,
       "66": 0,
       "67": 0,
       "68": 0,
-      "69": 0,
-      "70": 0,
-      "71": 0,
-      "72": 0,
-      "73": 0,
-      "74": 0,
-      "75": 0,
-      "76": 0,
-      "77": 0,
-      "78": 0,
-      "79": 0,
-      "80": 0,
-      "81": 0,
-      "82": 0,
-      "83": 0,
-      "84": 0,
-      "85": 0,
-      "86": 0,
-      "87": 0,
-      "88": 0,
-      "89": 0,
-      "90": 0,
-      "91": 0,
-      "92": 0,
-      "93": 0,
-      "94": 0,
-      "95": 0,
-      "96": 0,
-      "97": 0,
-      "98": 0,
-      "99": 0,
-      "100": 0,
-      "101": 0,
-      "102": 0,
-      "103": 0,
-      "104": 0,
-      "105": 0,
-      "106": 0,
-      "107": 0,
-      "108": 0,
-      "109": 0,
-      "110": 0,
-      "111": 0,
-      "112": 0,
-      "113": 0,
-      "114": 0,
-      "115": 0,
-      "116": 0,
-      "117": 0,
-      "118": 0,
-      "119": 0,
-      "120": 0,
-      "121": 0,
-      "122": 0,
-      "123": 0,
-      "124": 0,
-      "125": 0,
-      "126": 0,
-      "127": 0,
-      "128": 0,
-      "129": 0,
-      "130": 0,
-      "131": 0,
-      "132": 0,
-      "133": 0,
-      "134": 0,
-      "135": 1,
-      "136": 0,
-      "137": 0,
-      "138": 0,
-      "139": 0,
-      "140": 0,
-      "141": 0,
-      "142": 0,
-      "143": 0,
-      "144": 0,
-      "145": 0,
-      "146": 0,
-      "147": 0,
-      "148": 0,
+      "69": 1,
+      "70": 1,
+      "71": 1,
+      "72": 1,
+      "73": 1,
+      "74": 1,
+      "75": 1,
+      "76": 1,
+      "77": 1,
+      "78": 1,
+      "79": 1,
+      "80": 1,
+      "81": 1,
+      "82": 1,
+      "83": 1,
+      "84": 1,
+      "85": 1,
+      "86": 1,
+      "87": 1,
+      "88": 1,
+      "89": 1,
+      "90": 1,
+      "91": 1,
+      "92": 1,
+      "93": 1,
+      "94": 1,
+      "95": 1,
+      "96": 1,
+      "97": 1,
+      "98": 1,
+      "99": 1,
+      "100": 1,
+      "101": 1,
+      "102": 1,
+      "103": 1,
+      "104": 1,
+      "105": 1,
+      "106": 1,
+      "107": 1,
+      "108": 1,
+      "109": 1,
+      "110": 1,
+      "111": 1,
+      "112": 1,
+      "113": 1,
+      "114": 1,
+      "115": 7,
+      "116": 6,
+      "117": 6,
+      "118": 6,
+      "119": 6,
+      "120": 6,
+      "121": 6,
+      "122": 6,
+      "123": 6,
+      "124": 6,
+      "125": 6,
+      "126": 6,
+      "127": 6,
+      "128": 6,
+      "129": 6,
+      "130": 6,
+      "131": 6,
+      "132": 6,
+      "133": 6,
+      "134": 6,
+      "135": 11,
+      "136": 1,
+      "137": 1,
+      "138": 1,
+      "139": 1,
+      "140": 1,
+      "141": 1,
+      "142": 1,
+      "143": 1,
+      "144": 1,
+      "145": 1,
+      "146": 1,
+      "147": 1,
+      "148": 1,
       "149": 0,
       "150": 0,
       "151": 0,
@@ -12130,38 +12130,38 @@
       "154": 0,
       "155": 0,
       "156": 0,
-      "157": 0,
-      "158": 0,
-      "159": 0,
-      "160": 0,
-      "161": 0,
-      "162": 0,
-      "163": 1,
-      "164": 0,
-      "165": 1,
-      "166": 0,
-      "167": 0,
-      "168": 0,
-      "169": 0,
-      "170": 0,
-      "171": 0,
-      "172": 0,
-      "173": 1
+      "157": 1,
+      "158": 1,
+      "159": 1,
+      "160": 1,
+      "161": 1,
+      "162": 1,
+      "163": 11,
+      "164": 1,
+      "165": 11,
+      "166": 12,
+      "167": 1,
+      "168": 1,
+      "169": 1,
+      "170": 12,
+      "171": 11,
+      "172": 11,
+      "173": 11
     },
     "f": {
-      "0": 0,
+      "0": 7,
       "1": 0,
       "2": 0,
       "3": 0,
       "4": 0,
       "5": 0,
       "6": 0,
-      "7": 0,
-      "8": 0,
+      "7": 2,
+      "8": 7,
       "9": 0,
-      "10": 1,
-      "11": 0,
-      "12": 0,
+      "10": 11,
+      "11": 1,
+      "12": 1,
       "13": 0,
       "14": 0,
       "15": 0,
@@ -12169,17 +12169,17 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 12
     },
     "b": {
       "0": [
-        0,
-        0
+        1,
+        6
       ],
       "1": [
         0,
@@ -12198,32 +12198,32 @@
         0
       ],
       "5": [
-        0,
-        0
+        1,
+        1
       ],
       "6": [
-        0,
-        0
+        1,
+        1
       ],
       "7": [
-        0,
-        0
+        1,
+        6
       ],
       "8": [
-        0,
-        0
+        6,
+        1
       ],
       "9": [
-        0,
-        0
+        1,
+        1
       ],
       "10": [
-        0,
-        0
+        1,
+        11
       ],
       "11": [
-        0,
-        0
+        11,
+        1
       ]
     },
     "inputSourceMap": {
@@ -12279,8 +12279,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/detail/detail.component.html",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/detail/detail.component.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/detail/detail.component.html",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/detail/detail.component.ts"
       ],
       "sourcesContent": [
         "<div class=\"m3\">\n  <mat-card *ngIf=\"session\">\n    <mat-card-title>\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n          <button mat-icon-button (click)=\"back()\">\n            <mat-icon>arrow_back</mat-icon>\n          </button>\n          <h1>{{session.name | titlecase}}</h1>\n        </div>\n        <div>\n          <button *ngIf=\"isAdmin\" mat-raised-button color=\"warn\" (click)=\"delete()\">\n            <mat-icon>delete</mat-icon>\n            <span class=\"ml1\">Delete</span>\n          </button>\n          <div *ngIf=\"!isAdmin\">\n            <button *ngIf=\"!isParticipate\" mat-raised-button color=\"primary\" (click)=\"participate()\">\n              <mat-icon>person_add</mat-icon>\n              <span class=\"ml1\">Participate</span>\n            </button>\n            <button *ngIf=\"isParticipate\" mat-raised-button color=\"warn\" (click)=\"unParticipate()\">\n              <mat-icon>person_remove</mat-icon>\n              <span class=\"ml1\">Do not participate</span>\n            </button>\n\n          </div>\n\n\n        </div>\n      </div>\n    </mat-card-title>\n    <mat-card-subtitle *ngIf=\"teacher\">\n      <div fxLayoutAlign=\"start center\" class=\"ml3\">\n        <mat-icon>\n          people\n        </mat-icon>\n        <span class=\"ml1\">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>\n      </div>\n    </mat-card-subtitle>\n    <div mat-card-image fxLayoutAlign=\"center center\">\n      <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n    </div>\n    <mat-card-content>\n      <div class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            group\n          </mat-icon>\n          <span class=\"ml1\">{{ session.users.length }} attendees</span>\n        </div>\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            calendar_month\n          </mat-icon>\n          <span class=\"ml1\">{{ session.date | date: 'longDate'}}</span>\n        </div>\n      </div>\n      <div class=\"description\">\n        <p>Description:</p>\n        {{ session.description }}\n        <br>\n      </div>\n      <div class=\"date\" class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div class=\"created\"><i>Create at: </i> {{ session.createdAt| date: 'longDate'}}</div>\n        <div class=\"updated\"><i>Last update: </i> {{ session.updatedAt| date: 'longDate'}}</div>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</div>\n",
@@ -12288,10 +12288,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "59d725553bf40d4be6c9b80a125cc840207d0514"
+    "hash": "d4a065eb66d57f05ca675d61725a630240826a9f"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/form/form.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/form/form.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/form/form.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/form/form.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -14309,194 +14309,194 @@
       }
     },
     "s": {
-      "0": 84,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 156,
-      "9": 2,
-      "10": 2,
-      "11": 2,
-      "12": 156,
-      "13": 154,
-      "14": 154,
-      "15": 154,
-      "16": 154,
-      "17": 84,
-      "18": 1,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 1,
-      "31": 1,
-      "32": 1,
-      "33": 1,
-      "34": 1,
-      "35": 1,
-      "36": 1,
-      "37": 1,
-      "38": 1,
-      "39": 1,
-      "40": 1,
-      "41": 1,
-      "42": 1,
-      "43": 1,
-      "44": 1,
-      "45": 1,
-      "46": 1,
-      "47": 1,
-      "48": 1,
-      "49": 84,
-      "50": 83,
-      "51": 83,
-      "52": 83,
-      "53": 83,
-      "54": 83,
-      "55": 83,
-      "56": 83,
-      "57": 1,
-      "58": 1,
-      "59": 1,
-      "60": 1,
-      "61": 1,
-      "62": 1,
-      "63": 1,
-      "64": 1,
-      "65": 1,
-      "66": 1,
-      "67": 1,
+      "0": 184,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 16,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 308,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 308,
+      "13": 304,
+      "14": 304,
+      "15": 304,
+      "16": 304,
+      "17": 184,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 2,
+      "22": 2,
+      "23": 2,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 4,
+      "31": 4,
+      "32": 4,
+      "33": 4,
+      "34": 4,
+      "35": 4,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 4,
+      "41": 4,
+      "42": 4,
+      "43": 4,
+      "44": 4,
+      "45": 4,
+      "46": 4,
+      "47": 4,
+      "48": 4,
+      "49": 184,
+      "50": 180,
+      "51": 180,
+      "52": 180,
+      "53": 180,
+      "54": 180,
+      "55": 180,
+      "56": 180,
+      "57": 11,
+      "58": 6,
+      "59": 6,
+      "60": 6,
+      "61": 6,
+      "62": 6,
+      "63": 6,
+      "64": 6,
+      "65": 6,
+      "66": 6,
+      "67": 6,
       "68": 0,
-      "69": 1,
-      "70": 1,
-      "71": 0,
-      "72": 0,
-      "73": 0,
+      "69": 6,
+      "70": 6,
+      "71": 2,
+      "72": 2,
+      "73": 2,
       "74": 0,
-      "75": 1,
-      "76": 1,
-      "77": 1,
-      "78": 1,
-      "79": 1,
+      "75": 4,
+      "76": 2,
+      "77": 2,
+      "78": 2,
+      "79": 2,
       "80": 0,
       "81": 0,
-      "82": 1,
-      "83": 1,
-      "84": 1,
-      "85": 1,
-      "86": 1,
-      "87": 1,
-      "88": 84,
-      "89": 1,
-      "90": 1,
-      "91": 1,
-      "92": 1,
-      "93": 1,
-      "94": 1,
-      "95": 1,
-      "96": 1,
-      "97": 84,
-      "98": 83,
-      "99": 83,
-      "100": 83,
-      "101": 83,
-      "102": 83,
-      "103": 83,
-      "104": 1
+      "82": 4,
+      "83": 2,
+      "84": 2,
+      "85": 11,
+      "86": 6,
+      "87": 11,
+      "88": 200,
+      "89": 6,
+      "90": 6,
+      "91": 6,
+      "92": 6,
+      "93": 6,
+      "94": 6,
+      "95": 6,
+      "96": 6,
+      "97": 200,
+      "98": 194,
+      "99": 194,
+      "100": 194,
+      "101": 194,
+      "102": 194,
+      "103": 194,
+      "104": 11
     },
     "f": {
-      "0": 84,
-      "1": 0,
-      "2": 156,
-      "3": 84,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
+      "0": 184,
+      "1": 16,
+      "2": 308,
+      "3": 184,
+      "4": 2,
+      "5": 11,
+      "6": 6,
+      "7": 6,
       "8": 0,
-      "9": 1,
-      "10": 1,
+      "9": 2,
+      "10": 2,
       "11": 0,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 84
+      "12": 4,
+      "13": 2,
+      "14": 6,
+      "15": 200
     },
     "b": {
       "0": [
-        1,
-        83
+        4,
+        180
       ],
       "1": [
-        0,
-        0
+        2,
+        14
       ],
       "2": [
-        2,
-        154
+        4,
+        304
       ],
       "3": [
-        154,
-        2
+        304,
+        4
       ],
       "4": [
-        1,
-        83
+        4,
+        180
       ],
       "5": [
-        83,
-        1
+        180,
+        4
       ],
       "6": [
         0,
-        1
+        6
       ],
       "7": [
-        0,
-        1
+        2,
+        4
       ],
       "8": [
-        1,
+        2,
         0
       ],
       "9": [
         0,
-        1
+        4
       ],
       "10": [
         0,
-        1
+        4
       ],
       "11": [
         0,
-        1
+        4
       ],
       "12": [
         0,
-        1
+        4
       ],
       "13": [
-        1,
-        1
+        6,
+        6
       ],
       "14": [
-        1,
-        83
+        6,
+        194
       ],
       "15": [
-        83,
-        1
+        194,
+        6
       ]
     },
     "inputSourceMap": {
@@ -14558,8 +14558,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/form/form.component.ts",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/form/form.component.html"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/form/form.component.ts",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/form/form.component.html"
       ],
       "sourcesContent": [
         "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder, FormGroup, Validators } from '@angular/forms';\nimport { MatSnackBar } from '@angular/material/snack-bar';\nimport { ActivatedRoute, Router } from '@angular/router';\nimport { SessionService } from '../../../../services/session.service';\nimport { TeacherService } from '../../../../services/teacher.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-form',\n  templateUrl: './form.component.html',\n  styleUrls: ['./form.component.scss']\n})\nexport class FormComponent implements OnInit {\n\n  public onUpdate: boolean = false;\n  public sessionForm: FormGroup | undefined;\n  public teachers$ = this.teacherService.all();\n  private id: string | undefined;\n\n  constructor(\n    private route: ActivatedRoute,\n    private fb: FormBuilder,\n    private matSnackBar: MatSnackBar,\n    private sessionApiService: SessionApiService,\n    private sessionService: SessionService,\n    private teacherService: TeacherService,\n    private router: Router\n  ) {\n  }\n\n  public ngOnInit(): void {\n    if (!this.sessionService.sessionInformation!.admin) {\n      this.router.navigate(['/sessions']);\n    }\n    const url = this.router.url;\n    if (url.includes('update')) {\n      this.onUpdate = true;\n      this.id = this.route.snapshot.paramMap.get('id')!;\n      this.sessionApiService\n        .detail(this.id)\n        .subscribe((session: Session) => this.initForm(session));\n    } else {\n      this.initForm();\n    }\n  }\n\n  public submit(): void {\n    const session = this.sessionForm?.value as Session;\n\n    if (!this.onUpdate) {\n      this.sessionApiService\n        .create(session)\n        .subscribe((_: Session) => this.exitPage('Session created !'));\n    } else {\n      this.sessionApiService\n        .update(this.id!, session)\n        .subscribe((_: Session) => this.exitPage('Session updated !'));\n    }\n  }\n\n  private initForm(session?: Session): void {\n    this.sessionForm = this.fb.group({\n      name: [\n        session ? session.name : '',\n        [Validators.required]\n      ],\n      date: [\n        session ? new Date(session.date).toISOString().split('T')[0] : '',\n        [Validators.required]\n      ],\n      teacher_id: [\n        session ? session.teacher_id : '',\n        [Validators.required]\n      ],\n      description: [\n        session ? session.description : '',\n        [\n          Validators.required,\n          Validators.max(2000)\n        ]\n      ],\n    });\n  }\n\n  private exitPage(message: string): void {\n    this.matSnackBar.open(message, 'Close', { duration: 3000 });\n    this.router.navigate(['sessions']);\n  }\n}\n",
@@ -14567,10 +14567,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "ba72d327b910322946be91190d624e6379db7967"
+    "hash": "57edde7bb4a0310295c1e8d03f4ac4db1af355eb"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/list/list.component.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/list/list.component.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/list/list.component.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/list/list.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -15906,131 +15906,131 @@
       }
     },
     "s": {
-      "0": 19,
-      "1": 2,
-      "2": 2,
-      "3": 2,
-      "4": 2,
-      "5": 2,
-      "6": 2,
-      "7": 1,
-      "8": 2,
-      "9": 7,
-      "10": 2,
-      "11": 2,
-      "12": 2,
-      "13": 2,
-      "14": 2,
-      "15": 2,
-      "16": 7,
-      "17": 5,
-      "18": 5,
-      "19": 1,
-      "20": 2,
-      "21": 7,
-      "22": 2,
-      "23": 2,
-      "24": 2,
-      "25": 2,
-      "26": 2,
-      "27": 2,
-      "28": 2,
-      "29": 2,
-      "30": 2,
-      "31": 2,
-      "32": 2,
-      "33": 2,
-      "34": 2,
-      "35": 2,
-      "36": 2,
-      "37": 2,
-      "38": 2,
-      "39": 2,
-      "40": 2,
-      "41": 2,
-      "42": 2,
-      "43": 7,
-      "44": 5,
-      "45": 5,
-      "46": 5,
-      "47": 5,
-      "48": 5,
-      "49": 5,
-      "50": 5,
-      "51": 5,
-      "52": 5,
-      "53": 5,
-      "54": 5,
-      "55": 5,
-      "56": 1,
-      "57": 2,
-      "58": 2,
-      "59": 2,
-      "60": 22,
-      "61": 1,
-      "62": 2,
-      "63": 1,
-      "64": 19,
-      "65": 2,
-      "66": 2,
-      "67": 2,
-      "68": 2,
-      "69": 2,
-      "70": 2,
-      "71": 2,
-      "72": 2,
-      "73": 2,
-      "74": 19,
-      "75": 17,
-      "76": 17,
-      "77": 17,
-      "78": 17,
-      "79": 1
+      "0": 128,
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20,
+      "6": 20,
+      "7": 11,
+      "8": 12,
+      "9": 34,
+      "10": 12,
+      "11": 12,
+      "12": 12,
+      "13": 12,
+      "14": 12,
+      "15": 12,
+      "16": 34,
+      "17": 22,
+      "18": 22,
+      "19": 11,
+      "20": 13,
+      "21": 37,
+      "22": 13,
+      "23": 13,
+      "24": 13,
+      "25": 13,
+      "26": 13,
+      "27": 13,
+      "28": 13,
+      "29": 13,
+      "30": 13,
+      "31": 13,
+      "32": 13,
+      "33": 13,
+      "34": 13,
+      "35": 13,
+      "36": 13,
+      "37": 13,
+      "38": 13,
+      "39": 13,
+      "40": 13,
+      "41": 13,
+      "42": 13,
+      "43": 37,
+      "44": 24,
+      "45": 24,
+      "46": 24,
+      "47": 24,
+      "48": 24,
+      "49": 24,
+      "50": 24,
+      "51": 24,
+      "52": 24,
+      "53": 24,
+      "54": 24,
+      "55": 24,
+      "56": 11,
+      "57": 21,
+      "58": 21,
+      "59": 21,
+      "60": 140,
+      "61": 11,
+      "62": 21,
+      "63": 11,
+      "64": 137,
+      "65": 21,
+      "66": 21,
+      "67": 21,
+      "68": 21,
+      "69": 21,
+      "70": 21,
+      "71": 21,
+      "72": 21,
+      "73": 21,
+      "74": 137,
+      "75": 116,
+      "76": 116,
+      "77": 116,
+      "78": 116,
+      "79": 11
     },
     "f": {
-      "0": 19,
-      "1": 2,
-      "2": 7,
-      "3": 2,
-      "4": 7,
-      "5": 1,
-      "6": 2,
-      "7": 22,
-      "8": 2,
-      "9": 19
+      "0": 128,
+      "1": 12,
+      "2": 34,
+      "3": 13,
+      "4": 37,
+      "5": 11,
+      "6": 21,
+      "7": 140,
+      "8": 21,
+      "9": 137
     },
     "b": {
       "0": [
-        2,
-        17
+        20,
+        108
       ],
       "1": [
-        2,
-        5
+        12,
+        22
       ],
       "2": [
-        5,
-        2
+        22,
+        12
       ],
       "3": [
-        2,
-        5
+        13,
+        24
       ],
       "4": [
-        5,
-        2
+        24,
+        13
       ],
       "5": [
-        2,
-        2
+        21,
+        21
       ],
       "6": [
-        2,
-        17
+        21,
+        116
       ],
       "7": [
-        17,
-        2
+        116,
+        21
       ]
     },
     "inputSourceMap": {
@@ -16053,8 +16053,8 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/list/list.component.html",
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/components/list/list.component.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/list/list.component.html",
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/components/list/list.component.ts"
       ],
       "sourcesContent": [
         "<div class=\"list\">\n  <mat-card>\n    <mat-card-header fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n      <mat-card-title class=\"m0\">Rentals available</mat-card-title>\n      <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\" routerLink=\"create\">\n        <mat-icon>add</mat-icon>\n        <span id=\"createBtn\" class=\"ml1\">Create</span>\n      </button>\n    </mat-card-header>\n    <div class=\"items mt2\" fxLayout=\"row wrap\" fxLayout.lt-md=\"column\">\n      <mat-card class=\"item\" *ngFor=\"let session of (sessions$ | async)\" fxFlex>\n        <mat-card-header>\n          <mat-card-title>{{ session.name }}</mat-card-title>\n          <mat-card-subtitle>\n            Session on {{ session.date | date: 'longDate'}}\n          </mat-card-subtitle>\n        </mat-card-header>\n        <div mat-card-image fxLayoutAlign=\"center center\">\n          <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n        </div>\n        <mat-card-content>\n          <p>\n            {{ session.description }}\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <button mat-raised-button color=\"primary\" [routerLink]=\"['detail',session.id]\">\n            <mat-icon>search</mat-icon>\n            <span id=\"detailBtn\" class=\"ml1\">Detail</span>\n          </button>\n          <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\"\n                  [routerLink]=\"['update',session.id]\">\n            <mat-icon>edit</mat-icon>\n            <span id=\"editBtn\" class=\"ml1\">Edit</span>\n          </button>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n  </mat-card>\n</div>",
@@ -16062,10 +16062,10 @@
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "eb7280d0848000e653c3f43c46e3df35bb9aea19"
+    "hash": "6150f5fe7124dfa75ab94a5b59b98020a21672e7"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/sessions-routing.module.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/sessions-routing.module.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/sessions-routing.module.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/sessions-routing.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -16227,22 +16227,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11,
+      "4": 11,
+      "5": 11,
+      "6": 11
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 11,
+      "1": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -16262,17 +16262,17 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/sessions-routing.module.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/sessions-routing.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { DetailComponent } from './components/detail/detail.component';\nimport { FormComponent } from './components/form/form.component';\nimport { ListComponent } from './components/list/list.component';\n\nconst routes: Routes = [\n  { path: '', title: 'Sessions', component: ListComponent },\n  { path: 'detail/:id', title: 'Sessions - detail', component: DetailComponent },\n  { path: 'create', title: 'Sessions - create', component: FormComponent },\n  { path: 'update/:id', title: 'Sessions - update', component: FormComponent }\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class SessionsRoutingModule {\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b3c796f3ee1866a23c8775038852ce09a344f4f9"
+    "hash": "c774ed878098de588f37d88195868b6e38e2df6b"
   },
-  "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/sessions.module.ts": {
-    "path": "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/sessions.module.ts",
+  "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/sessions.module.ts": {
+    "path": "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/sessions.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -16444,23 +16444,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11,
+      "4": 11,
+      "5": 11,
+      "6": 11,
+      "7": 11
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 11,
+      "1": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -16485,13 +16485,13 @@
       ],
       "sourceRoot": "",
       "sources": [
-        "/Users/shiffff/Documents/Dev/OC/P5/Testez-une-application-full-stack-master/front/src/app/features/sessions/sessions.module.ts"
+        "/home/shiffff/Desktop/Documents/Dev/OCR/dev_fullStack/P5/Testez-une-application-full-stack-master-P5-OC/front/src/app/features/sessions/sessions.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { CommonModule, registerLocaleData } from '@angular/common';\nimport { FlexLayoutModule } from '@angular/flex-layout';\nimport { ReactiveFormsModule } from '@angular/forms';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatCardModule } from '@angular/material/card';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatInputModule } from '@angular/material/input';\nimport { MatSelectModule } from '@angular/material/select';\nimport { MatSnackBarModule } from '@angular/material/snack-bar';\nimport { ListComponent } from './components/list/list.component';\nimport { FormComponent } from './components/form/form.component';\nimport { DetailComponent } from './components/detail/detail.component';\nimport { SessionsRoutingModule } from './sessions-routing.module';\nimport localeFr from '@angular/common/locales/fr';\nregisterLocaleData(localeFr);\n\nconst materialModules = [\n  MatButtonModule,\n  MatCardModule,\n  MatFormFieldModule,\n  MatIconModule,\n  MatInputModule,\n  MatSnackBarModule,\n  MatSelectModule\n];\n\n@NgModule({\n  declarations: [\n    ListComponent,\n    FormComponent,\n    DetailComponent\n  ],\n  imports: [\n    CommonModule,\n    FlexLayoutModule,\n    ReactiveFormsModule,\n    SessionsRoutingModule,\n    ...materialModules\n  ]\n})\nexport class SessionsModule { }\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "815dfe5faf2d9f90ac325bac002d3a565a38c6a4"
+    "hash": "2597f57f10de7816c09098affee2fb48663c0530"
   }
 }

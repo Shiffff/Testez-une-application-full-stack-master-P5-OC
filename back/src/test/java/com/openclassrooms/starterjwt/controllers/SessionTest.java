@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
@@ -91,6 +92,84 @@ class SessionTest {
         // Then
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(sessionDtos, response.getBody());
+    }
+
+    @Test
+    void create_ReturnsSessionDto() {
+        // Given
+        Session session = createSession();
+        SessionDto sessionDto = createSessionDto();
+
+        when(sessionService.create(session)).thenReturn(session);
+        when(sessionMapper.toEntity(sessionDto)).thenReturn(session);
+        when(sessionMapper.toDto(session)).thenReturn(sessionDto);
+
+        // When
+        ResponseEntity<?> response = sessionController.create(sessionDto);
+
+        // Then
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(sessionDto, response.getBody());
+    }
+
+    @Test
+    void update_ReturnsUpdatedSessionDto() {
+        // Given
+        Long id = 1L;
+        Session session = createSession();
+        SessionDto sessionDto = createSessionDto();
+
+        when(sessionService.update(id, session)).thenReturn(session);
+        when(sessionMapper.toEntity(sessionDto)).thenReturn(session);
+        when(sessionMapper.toDto(session)).thenReturn(sessionDto);
+
+        // When
+        ResponseEntity<?> response = sessionController.update(String.valueOf(id), sessionDto);
+
+        // Then
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(sessionDto, response.getBody());
+    }
+
+    @Test
+    void save_ReturnsOk() {
+        // Given
+        Long id = 1L;
+        Session session = createSession();
+
+        when(sessionService.getById(id)).thenReturn(session);
+
+        // When
+        ResponseEntity<?> response = sessionController.save(String.valueOf(id));
+
+        // Then
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+    }
+
+    @Test
+    void participate_ReturnsOk() {
+        // Given
+        Long id = 1L;
+        Long userId = 1L;
+
+        // When
+        ResponseEntity<?> response = sessionController.participate(String.valueOf(id), String.valueOf(userId));
+
+        // Then
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+    }
+
+    @Test
+    void noLongerParticipate_ReturnsOk() {
+        // Given
+        Long id = 1L;
+        Long userId = 1L;
+
+        // When
+        ResponseEntity<?> response = sessionController.noLongerParticipate(String.valueOf(id), String.valueOf(userId));
+
+        // Then
+        assertEquals(HttpStatus.OK, response.getStatusCode());
     }
 
     private Session createSession() {
