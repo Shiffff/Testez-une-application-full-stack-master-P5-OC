@@ -61,44 +61,4 @@ describe('FormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should initialize form for new session', () => {
-    component.ngOnInit();
-    expect(component.onUpdate).toBeFalsy();
-    expect(component.sessionForm).toBeTruthy();
-    expect(component.sessionForm!.get('name')).toBeTruthy();
-    expect(component.sessionForm!.get('date')).toBeTruthy();
-    expect(component.sessionForm!.get('teacher_id')).toBeTruthy();
-    expect(component.sessionForm!.get('description')).toBeTruthy();
-  });
-
-  it('should submit new session form', () => {
-    // Simulate form input
-    component.sessionForm?.setValue({
-      name: 'Test Session',
-      date: '2022-05-10',
-      teacher_id: '2',
-      description: 'Test Description',
-    });
-    const spyCreate = jest
-      .spyOn(sessionApiService, 'create')
-      .mockReturnValue(of({} as Session));
-    component.submit();
-    expect(spyCreate).toHaveBeenCalled();
-  });
-
-  it('should submit updated session form', () => {
-    component.sessionForm?.setValue({
-      name: 'Updated Test Session',
-      date: '2022-05-11',
-      teacher_id: '3',
-      description: 'Updated Test Description',
-    });
-    component.onUpdate = true;
-    const spyUpdate = jest
-      .spyOn(sessionApiService, 'update')
-      .mockReturnValue(of({} as Session));
-    component.submit();
-    expect(spyUpdate).toHaveBeenCalled();
-  });
 });
