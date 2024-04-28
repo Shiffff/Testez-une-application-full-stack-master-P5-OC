@@ -15,12 +15,11 @@ import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
-public class SessionTest {
+public class SessionMapperTest {
 
     @Mock
     private TeacherService teacherService;
@@ -38,7 +37,6 @@ public class SessionTest {
 
     @Test
     public void testToEntity() {
-        // Given
         SessionDto sessionDto = new SessionDto();
         sessionDto.setDescription("Test Description");
         sessionDto.setTeacher_id(1L);
@@ -53,10 +51,8 @@ public class SessionTest {
         when(teacherService.findById(1L)).thenReturn(teacher);
         when(userService.findById(1L)).thenReturn(user);
 
-        // When
         Session session = sessionMapper.toEntity(sessionDto);
 
-        // Then
         assertThat(session).isNotNull();
         assertThat(session.getDescription()).isEqualTo(sessionDto.getDescription());
         assertThat(session.getTeacher()).isEqualTo(teacher);
@@ -65,7 +61,6 @@ public class SessionTest {
 
     @Test
     public void testToDto() {
-        // Given
         Session session = new Session();
         session.setDescription("Test Description");
 
@@ -79,16 +74,14 @@ public class SessionTest {
         users.add(user);
         session.setUsers(users);
 
-        // When
+
         SessionDto sessionDto = sessionMapper.toDto(session);
 
-        // Then
         assertThat(sessionDto).isNotNull();
         assertThat(sessionDto.getDescription()).isEqualTo(session.getDescription());
         assertThat(sessionDto.getTeacher_id()).isEqualTo(teacher.getId());
         assertThat(sessionDto.getUsers()).containsExactly(user.getId());
     }
-
 
 
 

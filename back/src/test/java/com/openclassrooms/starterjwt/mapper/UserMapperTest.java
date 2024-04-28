@@ -9,13 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class UserTest {
+public class UserMapperTest {
 
     private UserMapper userMapper = Mappers.getMapper(UserMapper.class);
 
     @Test
     public void testToEntityList() {
-        // Créer une liste d'objets UserDto
         List<UserDto> userDtos = new ArrayList<>();
         UserDto userDto1 = new UserDto();
         userDto1.setId(1L);
@@ -40,10 +39,7 @@ public class UserTest {
         userDtos.add(userDto1);
         userDtos.add(userDto2);
 
-        // Mapper la liste d'objets UserDto vers une liste d'objets User
         List<User> users = userMapper.toEntity(userDtos);
-
-        // Vérifier si le mapping est correct pour chaque objet
         assertThat(users).isNotEmpty().hasSize(userDtos.size());
 
         for (int i = 0; i < userDtos.size(); i++) {
@@ -62,7 +58,6 @@ public class UserTest {
 
     @Test
     public void testToDtoList() {
-        // Créer une liste d'objets User
         List<User> users = new ArrayList<>();
         User user1 = new User();
         user1.setId(1L);
@@ -87,10 +82,8 @@ public class UserTest {
         users.add(user1);
         users.add(user2);
 
-        // Mapper la liste d'objets User vers une liste d'objets UserDto
         List<UserDto> userDtos = userMapper.toDto(users);
 
-        // Vérifier si le mapping est correct pour chaque objet
         assertThat(userDtos).isNotEmpty().hasSize(users.size());
 
         for (int i = 0; i < users.size(); i++) {

@@ -40,23 +40,19 @@ class UserDetailsServiceTest {
 
     @Test
     void loadUserByUsername_UserFound_ReturnsUserDetails() {
-        // Arrange
         when(userRepository.findByEmail("test@example.com")).thenReturn(Optional.of(testUser));
 
-        // Act
         UserDetails userDetails = userDetailsService.loadUserByUsername("test@example.com");
 
-        // Assert
         assertNotNull(userDetails);
         assertEquals(testUser.getEmail(), userDetails.getUsername());
     }
 
     @Test
     void loadUserByUsername_UserNotFound_ThrowsUsernameNotFoundException() {
-        // Arrange
+
         when(userRepository.findByEmail("nonexistent@example.com")).thenReturn(Optional.empty());
 
-        // Act & Assert
         assertThrows(UsernameNotFoundException.class, () -> userDetailsService.loadUserByUsername("nonexistent@example.com"));
     }
 }

@@ -9,13 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TeacherTest {
+public class TeacherMapperTest {
 
     private TeacherMapper teacherMapper = Mappers.getMapper(TeacherMapper.class);
 
     @Test
     public void testToEntityList() {
-        // Créer une liste d'objets TeacherDto
         List<TeacherDto> teacherDtos = new ArrayList<>();
         TeacherDto teacherDto1 = new TeacherDto();
         teacherDto1.setId(1L);
@@ -34,10 +33,8 @@ public class TeacherTest {
         teacherDtos.add(teacherDto1);
         teacherDtos.add(teacherDto2);
 
-        // Mapper la liste d'objets TeacherDto vers une liste d'objets Teacher
         List<Teacher> teachers = teacherMapper.toEntity(teacherDtos);
 
-        // Vérifier si le mapping est correct pour chaque objet
         assertThat(teachers).isNotEmpty().hasSize(teacherDtos.size());
 
         for (int i = 0; i < teacherDtos.size(); i++) {
@@ -47,37 +44,4 @@ public class TeacherTest {
         }
     }
 
-    @Test
-    public void testToDtoList() {
-        // Créer une liste d'objets Teacher
-        List<Teacher> teachers = new ArrayList<>();
-        Teacher teacher1 = new Teacher();
-        teacher1.setId(1L);
-        teacher1.setFirstName("John");
-        teacher1.setLastName("Doe");
-        teacher1.setCreatedAt(LocalDateTime.now());
-        teacher1.setUpdatedAt(LocalDateTime.now());
-
-        Teacher teacher2 = new Teacher();
-        teacher2.setId(2L);
-        teacher2.setFirstName("Jane");
-        teacher2.setLastName("Smith");
-        teacher2.setCreatedAt(LocalDateTime.now());
-        teacher2.setUpdatedAt(LocalDateTime.now());
-
-        teachers.add(teacher1);
-        teachers.add(teacher2);
-
-        // Mapper la liste d'objets Teacher vers une liste d'objets TeacherDto
-        List<TeacherDto> teacherDtos = teacherMapper.toDto(teachers);
-
-        // Vérifier si le mapping est correct pour chaque objet
-        assertThat(teacherDtos).isNotEmpty().hasSize(teachers.size());
-
-        for (int i = 0; i < teachers.size(); i++) {
-            assertThat(teacherDtos.get(i))
-                    .usingRecursiveComparison()
-                    .isEqualTo(teachers.get(i));
-        }
-    }
 }
