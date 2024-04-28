@@ -53,6 +53,7 @@ Launching e2e test:
 
 Generate coverage report (you should launch e2e test before):
 
+> npm run e2e:ci
 > npm run e2e:coverage
 
 Report is available here:
